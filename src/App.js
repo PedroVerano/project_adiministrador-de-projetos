@@ -8,6 +8,8 @@ import NovoProjeto from './components/pages/NovoProjeto';
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import Projetos from './components/pages/Projetos';
+
 
 function App() {
   return (
@@ -19,7 +21,8 @@ function App() {
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/empresa' element={<Empresa/>}/>
           <Route exact path='/contato' element={<Contato/>}/>
-          <Route exact path='/novoprojeto' element={<NovoProjeto/>}/>  
+          <Route exact path='/novoprojeto' element={<NovoProjeto/>}/>
+          <Route exact path='/projeto' element={<Projetos/>}/>  
         </Routes>
         </Container>
         <Footer />
