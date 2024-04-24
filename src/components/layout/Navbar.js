@@ -8,22 +8,22 @@ import logo from '../../img/costs_logo.png'
 
 function Navbar() {
     return(
-        <nav>
+        <nav className={styles.navbar}>
             <Container>
                 <Link to='/'>
                     <img src={logo} alt="logo de moeda"></img>
                 </Link>
-                <ul>
-                    <li>
+                <ul className={styles.list}>
+                    <li className={styles.item}>
                         <Link to="/" >Home</Link>
                     </li>
-                    <li>
+                    <li className={styles.item}>
                         <Link to="/empresa">Empresa</Link>
                     </li>
-                    <li>
+                    <li className={styles.item}>
                         <Link to="/contato">Contato</Link>
                     </li>
-                    <li>
+                    <li className={styles.item}>
                         <Link to="/novoprojeto">Novo Projeto</Link>
                     </li>           
                 </ul>
