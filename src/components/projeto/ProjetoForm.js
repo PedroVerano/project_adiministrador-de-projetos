@@ -1,7 +1,9 @@
 import Input from '../form/Input';
+import Select from '../form/Select';
+import SubmitButton from '../form/SubmitButton';
 import styles from './ProjetoForm.module.css';
 
-function ProjetoForm() {
+function ProjetoForm({btnText}) {
     return(
         <div className={styles.form}>
             <Input 
@@ -14,6 +16,9 @@ function ProjetoForm() {
                 name='budget' 
                 text='Orçamento do projeto'
                 placeholder='Insira o orçamento do projeto' />
+            
+            <Select name='categotia_id' text='Selecione a categoria' />
+            <SubmitButton text={btnText}/>
         </div>
     )
 }
